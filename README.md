@@ -11,14 +11,15 @@ Installs the [Logentries](http://logentries.com) [Agent](http://logentries.com/d
 The following platforms are supported by this cookbook, meaning that the recipes run on these platforms without error:
 
 * Ubuntu
+* Amazon Linux
 
 ## Recipes
 
-* `logentries` - Set up the apt repository and install the logentries package
+* `logentries` - Set up the apt/yum repository and install the logentries package
 
 ## Usage
 
-This cookbook installs the Logentries Agent package from the Logentries apt repository.
+This cookbook installs the Logentries Agent package from the Logentries apt/yum repository.
 
 Additionally this cookbook provides a `logentries` definition which you can use to register hosts, follow logs, and execute other `le` based commands.
 
