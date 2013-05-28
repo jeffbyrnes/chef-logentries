@@ -28,7 +28,7 @@ if platform?("amazon")
 
   yum_repository "logentries" do
     description "Logentries Agent for Amazon Linux"
-    mirrorlist "http://rep.logentries.com/amazon\$releasever/\$basearch"
+    url "http://rep.logentries.com/amazon$releasever/$basearch"
     key "RPM-GPG-KEY-logentries"
   end
 elsif platform?("ubuntu")
